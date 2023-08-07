@@ -60,5 +60,12 @@ namespace ProyectosCSHARP
 
 
         }
+
+        private void btnAlta_Click(object sender, EventArgs e)
+        {
+            Alta  ventana = new Alta();
+            ventana.ShowDialog();
+
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace Dominio
 {
@@ -10,7 +11,12 @@ namespace Dominio
     {
 
         public int Id { get; set; }
+        [DisplayName ("coso")]
         public string Nombre { get; set; }
+        
         public string UrlImagen { get; set; }
+
+        public Elemento Tipo { get; set; }
+        public Elemento Debilidad { get; set; }
     }
 }
