@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
 
 namespace ProyectosCSHARP
 {
@@ -25,5 +27,17 @@ namespace ProyectosCSHARP
             this.Close();
 
         }
+
+        private void Alta_Load(object sender, EventArgs e)
+        {
+            ElementoNegocio tipo = new ElementoNegocio();
+            ElementoNegocio debilidad = new ElementoNegocio();
+            cbTipo.DataSource = tipo.listarElementos();
+            cbDebilidad.DataSource = debilidad.listarElementos();
+
+            
+        }
+
+       
     }
 }
