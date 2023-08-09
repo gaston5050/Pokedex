@@ -44,6 +44,8 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.cbDebilidad = new System.Windows.Forms.ComboBox();
+            this.lbTipoInvisible = new System.Windows.Forms.Label();
+            this.lbDebilidadInvisible = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -180,11 +182,29 @@
             this.cbDebilidad.Size = new System.Drawing.Size(121, 21);
             this.cbDebilidad.TabIndex = 18;
             // 
+            // lbTipoInvisible
+            // 
+            this.lbTipoInvisible.AutoSize = true;
+            this.lbTipoInvisible.Location = new System.Drawing.Point(241, 232);
+            this.lbTipoInvisible.Name = "lbTipoInvisible";
+            this.lbTipoInvisible.Size = new System.Drawing.Size(0, 13);
+            this.lbTipoInvisible.TabIndex = 19;
+            // 
+            // lbDebilidadInvisible
+            // 
+            this.lbDebilidadInvisible.AutoSize = true;
+            this.lbDebilidadInvisible.Location = new System.Drawing.Point(241, 267);
+            this.lbDebilidadInvisible.Name = "lbDebilidadInvisible";
+            this.lbDebilidadInvisible.Size = new System.Drawing.Size(0, 13);
+            this.lbDebilidadInvisible.TabIndex = 20;
+            // 
             // Alta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbDebilidadInvisible);
+            this.Controls.Add(this.lbTipoInvisible);
             this.Controls.Add(this.cbDebilidad);
             this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.checkBox1);
@@ -227,5 +247,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.ComboBox cbDebilidad;
+        private System.Windows.Forms.Label lbTipoInvisible;
+        private System.Windows.Forms.Label lbDebilidadInvisible;
     }
 }
