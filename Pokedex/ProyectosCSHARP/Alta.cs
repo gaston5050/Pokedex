@@ -33,23 +33,17 @@ namespace ProyectosCSHARP
             ElementoNegocio elementoNegocio = new ElementoNegocio();
          
             cbTipo.DataSource = elementoNegocio.listarElementos();
-            cbTipo.DisplayMember = "descripcion";
-            cbTipo.ValueMember = "id";
-               Elemento x = (Elemento)cbTipo.SelectedItem;
-            lbTipoInvisible.Text = x.Id.ToString();
+      
+             
           
 
             cbDebilidad.DataSource = elementoNegocio.listarElementos();
+            cbTipo.DataSource = elementoNegocio.listarElementos();
 
-            cbDebilidad.DisplayMember = "descripcion";
-            cbDebilidad.ValueMember = "id";
-             x = (Elemento)cbDebilidad.SelectedItem;
-            if (cbDebilidad.ValueMember(
-                ) != x.Id)
-            {
+         
 
 
-            }
+            
 
 
 

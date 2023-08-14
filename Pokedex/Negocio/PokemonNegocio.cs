@@ -22,7 +22,7 @@ namespace Negocio
             {
             Acceso acceso = new Acceso();
 
-            acceso.SetearConsulta("select id, nombre, urlImagen from pokemons");
+            acceso.SetearConsulta("select id, nombre, urlImagen, idtipo, iddebilidad from pokemons");
             acceso.EjecutarLectura();
 
 
@@ -33,6 +33,10 @@ namespace Negocio
                 aux.Id = (int)acceso.getLector["id"];
                 aux.Nombre = (string)acceso.getLector["nombre"];
                 aux.UrlImagen = (string)acceso.getLector["urlImagen"];
+                    aux.Tipo = new Elemento();
+                    aux.Tipo.Id = (int)acceso.getLector["idtipo"];
+                    aux.Debilidad = new Elemento();
+                    aux.Debilidad.Id = (int)acceso.getLector["iddebilidad"];
 
                 lista.Add(aux);
             }

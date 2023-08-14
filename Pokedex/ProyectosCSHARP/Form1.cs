@@ -24,6 +24,8 @@ namespace ProyectosCSHARP
             PokemonNegocio negocio = new PokemonNegocio();
 
             dgvPokemons.DataSource = negocio.Listar();
+            dgvPokemons.Columns["UrlImagen"].Visible = false;
+
             pbImagen.Load();
 
            
