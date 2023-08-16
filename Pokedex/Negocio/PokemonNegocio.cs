@@ -12,7 +12,7 @@ namespace Negocio
 {
     public class PokemonNegocio
     {
-      //  private List<Pokemon> Listado;
+        //  private List<Pokemon> Listado;
 
         public List<Pokemon> Listar()
         {
@@ -20,26 +20,28 @@ namespace Negocio
             List<Pokemon> lista = new List<Pokemon>();
             try
             {
-            Acceso acceso = new Acceso();
+                Acceso acceso = new Acceso();
 
-            acceso.SetearConsulta("select id, nombre, urlImagen, idtipo, iddebilidad from pokemons");
-            acceso.EjecutarLectura();
+                acceso.SetearConsulta("select id, nombre, urlImagen, idtipo, iddebilidad from pokemons");
+                acceso.EjecutarLectura();
 
 
-            while (acceso.getLector.Read())
-            {
-                Pokemon aux = new Pokemon();
+                while (acceso.getLector.Read())
+                {
+                    Pokemon aux = new Pokemon();
 
-                aux.Id = (int)acceso.getLector["id"];
-                aux.Nombre = (string)acceso.getLector["nombre"];
-                aux.UrlImagen = (string)acceso.getLector["urlImagen"];
+                    aux.Id = (int)acceso.getLector["id"];
+                    aux.Nombre = (string)acceso.getLector["nombre"];
+                    aux.UrlImagen = (string)acceso.getLector["urlImagen"];
                     aux.Tipo = new Elemento();
-                    aux.Tipo.Descripcion= (String)acceso.getLector["idtipo"];
-                    aux.Debilidad = new Elemento();
-                    aux.Debilidad.Descripcion = (String)acceso.getLector["iddebilidad"];
+                    int coso = (int)acceso.getLector["idtipo"];
+                    
+                    //aux.Tipo.Id = (int)acceso.getLector["idtipo"];
+                    //aux.Debilidad = new Elemento();
+                    //aux.Debilidad.Id = (int)acceso.getLector["iddebilidad"];
 
-                lista.Add(aux);
-            }
+                    lista.Add(aux);
+                }
 
             }
             catch (Exception ex)
