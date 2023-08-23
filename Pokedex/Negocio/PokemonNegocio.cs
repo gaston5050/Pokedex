@@ -34,11 +34,14 @@ namespace Negocio
                     aux.Nombre = (string)acceso.getLector["nombre"];
                     aux.UrlImagen = (string)acceso.getLector["urlImagen"];
                     aux.Tipo = new Elemento();
+
                     int coso = (int)acceso.getLector["idtipo"];
                     
-                    //aux.Tipo.Id = (int)acceso.getLector["idtipo"];
-                    //aux.Debilidad = new Elemento();
-                    //aux.Debilidad.Id = (int)acceso.getLector["iddebilidad"];
+      
+                    aux.Tipo.Descripcion= (string)acceso.getLector["idtipo"];
+                    aux.Debilidad = new Elemento();
+                    aux.Debilidad.Descripcion= (string)acceso.getLector["iddebilidad"];
+
 
                     lista.Add(aux);
                 }
@@ -64,7 +67,8 @@ namespace Negocio
 
 
 
-
+       
+          
 
             return lista;
 
