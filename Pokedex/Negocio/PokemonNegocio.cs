@@ -12,7 +12,7 @@ namespace Negocio
 {
     public class PokemonNegocio
     {
-      //  private List<Pokemon> Listado;
+        //  private List<Pokemon> Listado;
 
         public List<Pokemon> Listar()
         {
@@ -20,26 +20,29 @@ namespace Negocio
             List<Pokemon> lista = new List<Pokemon>();
             try
             {
-            Acceso acceso = new Acceso();
+                Acceso acceso = new Acceso();
 
             acceso.SetearConsulta("Select Numero, Nombre, P.Descripcion, UrlImagen, E.Descripcion Tipo, D.Descripcion Debilidad, P.IdTipo, P.IdDebilidad, P.Id From POKEMONS P, ELEMENTOS E, ELEMENTOS D Where E.Id = P.IdTipo And D.Id = P.IdDebilidad And P.Activo = 1");
             acceso.EjecutarLectura();
 
 
-            while (acceso.getLector.Read())
-            {
-                Pokemon aux = new Pokemon();
+                while (acceso.getLector.Read())
+                {
+                    Pokemon aux = new Pokemon();
 
-                aux.Id = (int)acceso.getLector["id"];
-                aux.Nombre = (string)acceso.getLector["nombre"];
-                aux.UrlImagen = (string)acceso.getLector["urlImagen"];
+                    aux.Id = (int)acceso.getLector["id"];
+                    aux.Nombre = (string)acceso.getLector["nombre"];
+                    aux.UrlImagen = (string)acceso.getLector["urlImagen"];
                     aux.Tipo = new Elemento();
-                    aux.Tipo.Descripcion= (string)acceso.getLector["Tipo"];
+
+                    aux.Tipo.Descripcion= (string)acceso.getLector["idtipo"];
+
                     aux.Debilidad = new Elemento();
                     aux.Debilidad.Descripcion= (string)acceso.getLector["Debilidad"];
 
-                lista.Add(aux);
-            }
+
+                    lista.Add(aux);
+                }
 
             }
             catch (Exception ex)
