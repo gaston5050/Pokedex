@@ -35,7 +35,7 @@ namespace Negocio
                     aux.UrlImagen = (string)acceso.getLector["urlImagen"];
                     aux.Tipo = new Elemento();
 
-                    aux.Tipo.Descripcion= (string)acceso.getLector["idtipo"];
+                    aux.Tipo.Descripcion = (string)acceso.getLector["Tipo"];
 
                     aux.Debilidad = new Elemento();
                     aux.Debilidad.Descripcion= (string)acceso.getLector["Debilidad"];
