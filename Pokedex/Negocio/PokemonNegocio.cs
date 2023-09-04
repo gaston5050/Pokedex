@@ -29,7 +29,7 @@ namespace Negocio
                 while (acceso.getLector.Read())
                 {
                     Pokemon aux = new Pokemon();
-
+                    aux.Numero = (int)acceso.getLector["numero"];
                     aux.Id = (int)acceso.getLector["id"];
                     aux.Nombre = (string)acceso.getLector["nombre"];
                     aux.UrlImagen = (string)acceso.getLector["urlImagen"];

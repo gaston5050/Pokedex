@@ -14,6 +14,7 @@ namespace ProyectosCSHARP
 {
     public partial class Alta : Form
     {
+        Pokemon pokemon = null;
        public Alta()
         {
 
@@ -31,23 +32,34 @@ namespace ProyectosCSHARP
         private void Alta_Load(object sender, EventArgs e)
         {
             ElementoNegocio elementoNegocio = new ElementoNegocio();
-         
-            cbTipo.DataSource = elementoNegocio.listarElementos();
-      
-             
-          
-
-            cbDebilidad.DataSource = elementoNegocio.listarElementos();
-            cbTipo.DataSource = elementoNegocio.listarElementos();
-
-         
-
-
             
+            
+            cbTipo.DataSource = elementoNegocio.listarElementos();
+            cbTipo.ValueMember = "id";
+            cbTipo.DisplayMember = "descripcion";
+            cbDebilidad.DataSource = elementoNegocio.listarElementos();
+            // cbTipo.DataSource = elementoNegocio.listarElementos();
+            cbDebilidad.DisplayMember = "descripcion";
+            cbDebilidad.ValueMember = "id";
+             
+          if(pokemon != null) {
+
+                tbId.Text = pokemon.Id.ToString();
+            //    tbNumero.Text = pokemon.
+                tbNumero.Text = pokemon.Numero.ToString();
+                tb
+            
+            
+            }
+
+
+        
 
 
 
-        }
+
+
+    }
               
        
     }

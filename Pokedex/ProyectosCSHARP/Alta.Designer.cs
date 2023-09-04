@@ -38,7 +38,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbId = new System.Windows.Forms.TextBox();
             this.tbNumero = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -135,12 +135,12 @@
             this.tbNumero.Size = new System.Drawing.Size(121, 20);
             this.tbNumero.TabIndex = 10;
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 11;
+            this.tbNombre.Location = new System.Drawing.Point(113, 123);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(121, 20);
+            this.tbNombre.TabIndex = 11;
             // 
             // textBox2
             // 
@@ -210,7 +210,7 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.tbNumero);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.label7);
@@ -241,7 +241,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.TextBox tbNumero;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.CheckBox checkBox1;
