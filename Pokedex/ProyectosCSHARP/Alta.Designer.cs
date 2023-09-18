@@ -38,10 +38,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbId = new System.Windows.Forms.TextBox();
             this.tbNumero = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.tbDescripcion = new System.Windows.Forms.TextBox();
+            this.tbUrlImagen = new System.Windows.Forms.TextBox();
+            this.chbEstado = new System.Windows.Forms.CheckBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.cbDebilidad = new System.Windows.Forms.ComboBox();
             this.lbTipoInvisible = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(899, 500);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 0;
@@ -133,7 +133,7 @@
             // tbId
             // 
             this.tbId.Location = new System.Drawing.Point(151, 68);
-            this.tbId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbId.Margin = new System.Windows.Forms.Padding(4);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(160, 22);
             this.tbId.TabIndex = 9;
@@ -141,51 +141,51 @@
             // tbNumero
             // 
             this.tbNumero.Location = new System.Drawing.Point(151, 110);
-            this.tbNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNumero.Margin = new System.Windows.Forms.Padding(4);
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(160, 22);
             this.tbNumero.TabIndex = 10;
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 151);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 22);
-            this.textBox1.TabIndex = 11;
+            this.tbNombre.Location = new System.Drawing.Point(151, 151);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(160, 22);
+            this.tbNombre.TabIndex = 11;
             // 
-            // textBox2
+            // tbDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(151, 193);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 22);
-            this.textBox2.TabIndex = 12;
+            this.tbDescripcion.Location = new System.Drawing.Point(151, 193);
+            this.tbDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDescripcion.Name = "tbDescripcion";
+            this.tbDescripcion.Size = new System.Drawing.Size(160, 22);
+            this.tbDescripcion.TabIndex = 12;
             // 
-            // textBox3
+            // tbUrlImagen
             // 
-            this.textBox3.Location = new System.Drawing.Point(151, 235);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 22);
-            this.textBox3.TabIndex = 13;
+            this.tbUrlImagen.Location = new System.Drawing.Point(151, 235);
+            this.tbUrlImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.tbUrlImagen.Name = "tbUrlImagen";
+            this.tbUrlImagen.Size = new System.Drawing.Size(160, 22);
+            this.tbUrlImagen.TabIndex = 13;
             // 
-            // checkBox1
+            // chbEstado
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(177, 363);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(94, 20);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "chbEstado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbEstado.AutoSize = true;
+            this.chbEstado.Location = new System.Drawing.Point(177, 363);
+            this.chbEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.chbEstado.Name = "chbEstado";
+            this.chbEstado.Size = new System.Drawing.Size(72, 20);
+            this.chbEstado.TabIndex = 16;
+            this.chbEstado.Text = "Estado";
+            this.chbEstado.UseVisualStyleBackColor = true;
             // 
             // cbTipo
             // 
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Location = new System.Drawing.Point(151, 277);
-            this.cbTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(160, 24);
             this.cbTipo.TabIndex = 17;
@@ -194,7 +194,7 @@
             // 
             this.cbDebilidad.FormattingEnabled = true;
             this.cbDebilidad.Location = new System.Drawing.Point(151, 320);
-            this.cbDebilidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDebilidad.Margin = new System.Windows.Forms.Padding(4);
             this.cbDebilidad.Name = "cbDebilidad";
             this.cbDebilidad.Size = new System.Drawing.Size(160, 24);
             this.cbDebilidad.TabIndex = 18;
@@ -237,10 +237,10 @@
             this.Controls.Add(this.lbTipoInvisible);
             this.Controls.Add(this.cbDebilidad);
             this.Controls.Add(this.cbTipo);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.chbEstado);
+            this.Controls.Add(this.tbUrlImagen);
+            this.Controls.Add(this.tbDescripcion);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.tbNumero);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.label7);
@@ -251,7 +251,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Alta";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Alta_Load);
@@ -272,10 +272,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.TextBox tbNumero;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.TextBox tbDescripcion;
+        private System.Windows.Forms.TextBox tbUrlImagen;
+        private System.Windows.Forms.CheckBox chbEstado;
         private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.ComboBox cbDebilidad;
         private System.Windows.Forms.Label lbTipoInvisible;

@@ -33,7 +33,9 @@ namespace Negocio
                     aux.Id = (int)acceso.getLector["id"];
                     aux.Nombre = (string)acceso.getLector["nombre"];
                     aux.UrlImagen = (string)acceso.getLector["urlImagen"];
+                    aux.Descripcion = (string)acceso.getLector["descripcion"];
                     aux.Tipo = new Elemento();
+                    aux.Numero = (int)acceso.getLector["numero"];
 
                     aux.Tipo.Descripcion = (string)acceso.getLector["Tipo"];
 
@@ -73,7 +75,22 @@ namespace Negocio
 
         }
 
+        public void agregar(Pokemon pokemon)
+        {
+            Acceso conexion = new Acceso();
 
+            try
+            {
+              conexion.SetearConsulta
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
 
 
 

@@ -51,7 +51,27 @@ namespace ProyectosCSHARP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Pokemon  pokemon = new Pokemon();
+            PokemonNegocio negocio = new PokemonNegocio();
 
+            try
+            {
+                pokemon.Nombre = tbNombre.Text;
+                pokemon.Descripcion = tbDescripcion.Text;   
+                pokemon.UrlImagen = tbUrlImagen.Text;
+                pokemon.Id= int.Parse(tbId.Text);
+                // pokemon.Debilidad.Descripcion = tb
+
+                negocio.agregar(pokemon);
+                MessageBox.Show("Agregado exitosamente!!! ");
+                Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
